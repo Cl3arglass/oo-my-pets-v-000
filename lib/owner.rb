@@ -63,7 +63,7 @@ class Owner
     @pets[:cats].map{|cat| cat.mood = "nervous"}
     @pets[:fishes].map{|fish| fish.mood = "nervous"}
 
-    @pets.map{|type| type.clear}
+    @pets.each_value{|type| type.clear}
 
   end
 
